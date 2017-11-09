@@ -18,16 +18,16 @@ import { DatePicker } from 'antd';
 import moment from 'moment';
 const { MonthPicker, RangePicker } = DatePicker;
 
-const dateFormat = 'YYYY/MM/DD';
-const monthFormat = 'YYYY/MM';
+const dateFormat = 'YYYY';
+const monthFormat = 'YYYY';
 ReactDOM.render(
   <div>
-    <DatePicker defaultValue={moment('2015/01/01', dateFormat)} format={dateFormat} />
+    <DatePicker defaultValue={moment('2015', dateFormat)} format={dateFormat} />
     <br />
-    <MonthPicker defaultValue={moment('2015/01', monthFormat)} format={monthFormat} />
+    <MonthPicker defaultValue={moment('2015', monthFormat)} format={monthFormat} />
     <br />
     <RangePicker
-      defaultValue={[moment('2015/01/01', dateFormat), moment('2015/01/01', dateFormat)]}
+      defaultValue={[moment('2015', dateFormat), moment('2015', dateFormat)]}
       format={dateFormat}
     />
   </div>
